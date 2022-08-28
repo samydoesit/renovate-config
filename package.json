@@ -1,0 +1,16 @@
+{
+  "name": "renovate",
+  "version": "1.0.0",
+  "description": "Preset for Renovate",
+  "license": "MIT",
+  "homepage": "https://github.com/samydoesit/renovate-config",
+  "scripts": {
+    "validate": "pnpm exec renovate-config-validator",
+    "test": "npm run validate",
+    "prepare": "npm run test"
+  },
+  "devDependencies": {
+    "renovate": "latest"
+  },
+  "packageManager": "pnpm@8.6.0"
+}

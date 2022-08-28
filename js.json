@@ -1,0 +1,41 @@
+{
+  "extends": [
+    "github>samydoesit/renovate-config"
+  ],
+  "ignorePresets": [
+    "group:vueMonorepo"
+  ],
+  "packageRules": [
+    {
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "semanticCommitType": "chore",
+      "semanticCommitScope": "deps"
+    },
+    {
+      "matchPackageNames": [
+        "typescript",
+        "ttypescript"
+      ],
+      "matchPackagePatterns": [
+        "vite",
+        "rollup"
+      ],
+      "semanticCommitType": "build",
+      "semanticCommitScope": "deps"
+    },
+    {
+      "matchPackageNames": [
+        "@vue/test-utils"
+      ],
+      "matchPackagePatterns": [
+        "jest",
+        "stryker",
+        "vitest"
+      ],
+      "semanticCommitType": "test",
+      "semanticCommitScope": "deps"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "packageRules": [
+    {
+      "matchDepTypes": [
+        "*"
+      ],
+      "semanticCommitType": "deps",
+      "semanticCommitScope": null
+    },
+    {
+      "matchDepTypes": [
+        "action"
+      ],
+      "semanticCommitType": "ci",
+      "semanticCommitScope": "deps"
+    }
+  ]
+}
